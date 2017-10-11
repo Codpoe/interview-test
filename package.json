@@ -1,0 +1,33 @@
+{
+  "name": "codemao-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --hide-modules",
+    "dev": "webpack-dev-server --hot --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "codpoe",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.5.0",
+    "cross-env": "^5.0.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-react": "^6.24.1",
+    "style-loader": "^0.18.2",
+    "css-loader": "^0.28.4",
+    "postcss-loader": "^2.0.6",
+    "postcss-cssnext": "^2.11.0",
+    "precss": "^1.4.0",
+    "extract-text-webpack-plugin": "^2.1.2"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  }
+}
