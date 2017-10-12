@@ -21,19 +21,20 @@ class UserItem extends Component {
     }
 
     render() {
-        const { avatar, name, sex, age } = this.props.user;
+        const { id, avatar, name, sex, age } = this.props.user;
         const { active } = this.state;
         return (
             <div className={`user-item ${active ? 'user-item--active' : ''}`}>
-                <div className="visible-part"
+                <input id={id} type="checkbox" name="toggle"/>    
+                <label className="visible-part"
+                    htmlFor={id}
                     onClick={this.handleClick}>
-
                     <div className="visible-info">
                         <img className="avatar" src={avatar} title={name} />
                         <span className="name">{name}</span>
                     </div>
                     <button className="del-btn">X</button>
-                </div>
+                </label>
 
                 <div className="hidden-part">
                     Sex:&nbsp;&nbsp;{sex}<br />
@@ -41,7 +42,7 @@ class UserItem extends Component {
                 </div>
             </div>
         )
-    }    
+    }
 }
 
 export default UserItem;

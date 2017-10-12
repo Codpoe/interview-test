@@ -1,6 +1,12 @@
 .user-item {
     width: 100%;
     transition: all 0.4s;
+
+    input[name="toggle"] {
+        position: absolute;
+        visibility: hidden;
+    }
+
     .visible-part {
         display: flex;
         flex-direction: row;
@@ -62,15 +68,12 @@
         padding: 0px 20px;
         line-height: 30px;
         overflow: hidden;
-        background: whitesmoke;
         font-size: 14px;
         color: #777;
+        transition: all 0.4s ease-out;
     }
-}
 
-.user-item--active {
-    .hidden-part {
+    input[name="toggle"]:checked ~ .hidden-part {
         max-height: 100px;
-        box-shadow: 0 1px 1px rgba(0,0,0,0.2) inset;
     }
 }
