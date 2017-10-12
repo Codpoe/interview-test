@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import UserItem from '../UserItem/UserItem.js';
+import UndoRedo from '../../containers/UndoRedo/UndoRedo.js';
 
 import './UserList.css';
 
@@ -16,6 +17,7 @@ const UserList = ({users, handleDelClick}) => {
                     </li>
                 ))}
             </ul>
+            <UndoRedo />
         </div>
     )
 }

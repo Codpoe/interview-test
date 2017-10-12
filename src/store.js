@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
 import rootReducer from './reducer.js';
+import undoable from './undoable.js';
 
 let initialState = {
     users: [
@@ -9,5 +10,5 @@ let initialState = {
     ]
 }
 
-export default createStore(rootReducer, initialState);
+export default createStore(undoable(rootReducer, initialState));
 

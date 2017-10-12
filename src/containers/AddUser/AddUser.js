@@ -54,6 +54,9 @@ class AddUser extends Component {
 
         return (
             <div className="add-user">
+                <header className="logo">
+                    <img src="https://static.codemao.cn/whitepaw/code_mao_logo.svg" title="codemao" />
+                </header>
                 <form onSubmit={this.handleSubmit}>
                     <p>
                         <label>Name</label><br />

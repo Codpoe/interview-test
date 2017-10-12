@@ -4,7 +4,7 @@ import UserList from '../components/UserList/UserList.js';
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        users: state.users
+        users: state.present.users
     }
 }
 
