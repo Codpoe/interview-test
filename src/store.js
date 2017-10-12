@@ -4,9 +4,9 @@ import undoable from './undoable.js';
 
 let initialState = {
     users: [
-        { name: 'User 1', avatar: '', sex: 'Male', age: 20 },
-        { name: 'User 2', avatar: '', sex: 'Male', age: 21 },
-        { name: 'User 3', avatar: '', sex: 'Female', age: 22 },
+        { id: 0, name: 'User 0', avatar: '', sex: 'Male', age: 20 },
+        { id: 1, name: 'User 1', avatar: '', sex: 'Male', age: 21 },
+        { id: 2, name: 'User 2', avatar: '', sex: 'Female', age: 22 },
     ]
 }
 

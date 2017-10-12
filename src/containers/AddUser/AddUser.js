@@ -42,6 +42,7 @@ class AddUser extends Component {
         ev.preventDefault();
         const { name, sex, age, avatar } = this.state;
         this.props.dispatch(addUser({
+            id: Date.now(),
             name,
             sex,
             age,

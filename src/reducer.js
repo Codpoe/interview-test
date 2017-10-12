@@ -12,7 +12,7 @@ export default (state, action) => {
         case DELETE_USER:
             return Object.assign({}, state, {
                 users: state.users.slice().filter((user) => {
-                    return user.name !== action.user.name;
+                    return user.id !== action.user.id;
                 })
             });
         default:

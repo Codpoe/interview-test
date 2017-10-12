@@ -36,7 +36,8 @@ class UserItem extends Component {
                 </div>
 
                 <div className="hidden-part">
-                    {sex}&nbsp;&nbsp;{age}
+                    Sex:&nbsp;&nbsp;{sex}<br />
+                    Age:&nbsp;&nbsp;{age}
                 </div>
             </div>
         )
