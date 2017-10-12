@@ -1,0 +1,63 @@
+.add-user {
+    width: 240px;
+    
+    p {
+        margin-top: 20px;
+    }
+    
+    label {
+        font-size: 16px;
+        color: #888;
+        letter-spacing: 2px;
+    }
+
+    input {
+        margin-top: 10px;
+        letter-spacing: normal;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        outline: none;
+        background: transparent;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 14px;
+        transition: all 0.2s;
+        &:hover {
+            border-color: #03A9F4;
+        }
+        &:focus {
+            border-color: #03A9F4;
+        }
+    }
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    .sex-radio:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    .submit-btn {
+        outline: none;
+        border: none;
+        height: 32px;
+        margin-top: 20px;
+        padding: 0 20px;
+        border-radius: 16px;
+        background: #03A9F4;
+        box-shadow: 0 1px 30px rgba(3,169,244,0.6);
+        font-size: 14px;
+        color: white;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            background: rgba(3,169,244,0.8);
+        }
+    }
+}
