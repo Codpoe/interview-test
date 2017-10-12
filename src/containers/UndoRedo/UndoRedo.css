@@ -18,6 +18,7 @@
         letter-spacing: 2px;
         color: #888;
         cursor: pointer;
+        user-select: none;
         transition: all 0.2s;
         &:hover {
             background: #03A9F4;
