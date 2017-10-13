@@ -1,11 +1,17 @@
 import { UNDO, REDO } from './action.js';
 
-export default (reducer, initialState) => {
-    const wrappedState = {
-        past: [],
-        present: initialState,
-        future: []
-    };
+export default (reducer, state) => {
+    let wrappedState;
+
+    if (!state.past || !state.future) {
+        wrappedState = {
+            past: [],
+            present: initialState,
+            future: []
+        };
+    } else {
+        wrappedState = state;
+    }
 
     return (state = wrappedState, action) => {
         const { past, present, future } = state;

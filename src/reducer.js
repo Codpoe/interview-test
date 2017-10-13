@@ -2,7 +2,7 @@ import { ADD_USER, DELETE_USER } from './action.js';
 
 export default (state, action) => {
     switch (action.type) {
-        case ADD_USER:
+        case ADD_USER:    
             return Object.assign({}, state, {
                 users: [
                     ...state.users,
