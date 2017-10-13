@@ -6,7 +6,7 @@ export default (reducer, state) => {
     if (!state.past || !state.future) {
         wrappedState = {
             past: [],
-            present: initialState,
+            present: state,
             future: []
         };
     } else {
