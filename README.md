@@ -11,3 +11,5 @@ An interview test -- A React demo
 - ...
 
 因为之前对 Redux 接触不多，所以我就采用了 Redux，然后用了两天左右的时间做完了，还加了 redo / undo。时间紧促，UI 界面也就随意发挥了。
+
+clone 项目到本地，然后直接用浏览器打开项目根目录的`index.html`，就可以看到效果。当然，也可以先`npm install`，然后`npm run dev`，你懂的。
